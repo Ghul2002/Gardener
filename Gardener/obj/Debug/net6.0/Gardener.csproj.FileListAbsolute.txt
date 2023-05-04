@@ -1,0 +1,15 @@
+C:\Users\ghul2\source\repos\Gardener\Gardener\bin\Debug\net6.0\Gardener.exe
+C:\Users\ghul2\source\repos\Gardener\Gardener\bin\Debug\net6.0\Gardener.deps.json
+C:\Users\ghul2\source\repos\Gardener\Gardener\bin\Debug\net6.0\Gardener.runtimeconfig.json
+C:\Users\ghul2\source\repos\Gardener\Gardener\bin\Debug\net6.0\Gardener.dll
+C:\Users\ghul2\source\repos\Gardener\Gardener\bin\Debug\net6.0\Gardener.pdb
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0\Gardener.csproj.AssemblyReference.cache
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0\Gardener.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0\Gardener.AssemblyInfoInputs.cache
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0\Gardener.AssemblyInfo.cs
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0\Gardener.csproj.CoreCompileInputs.cache
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0\Gardener.dll
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0\refint\Gardener.dll
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0\Gardener.pdb
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0\Gardener.genruntimeconfig.cache
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0\ref\Gardener.dll

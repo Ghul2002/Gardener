@@ -1,0 +1,14 @@
+﻿<Window x:Class="Gardener.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gardener"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="AddPlantBT" Content="Button" HorizontalAlignment="Left" Margin="400,123,0,0" VerticalAlignment="Top" Height="48" Width="90" RenderTransformOrigin="0.535,0.507" Click="AddPlantBT_Click"/>
+        <ListBox x:Name="PlantList" Margin="50,123,438,147" Height="NaN" Width="NaN" DisplayMemberPath="Name"/>
+
+    </Grid>
+</Window>
