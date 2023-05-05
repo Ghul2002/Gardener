@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gardener"
         mc:Ignorable="d"
-        Title="AddPlantWindow" Height="400" Width="450">
+        Title="Add Plant!" Height="400" Width="450">
     <Grid Height="NaN" Margin="0,0,0,-6">
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Add new plant!" VerticalAlignment="Top" FontSize="36" FontFamily="Arial Black" Height="42" Width="335"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,19,0,0" TextWrapping="Wrap" Text="Add new plant!" VerticalAlignment="Top" FontSize="36" FontFamily="Arial Black" Height="42" Width="335"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,77,0,0" TextWrapping="Wrap" Text="Name: " VerticalAlignment="Top" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,124,0,0" TextWrapping="Wrap" Text="Short decription: " VerticalAlignment="Top" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,171,0,0" TextWrapping="Wrap" Text="Water amount: " VerticalAlignment="Top" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,220,0,0" TextWrapping="Wrap" Text="How often should the plant be watered?" VerticalAlignment="Top" FontSize="14"/>
         <TextBox x:Name="nameTB" HorizontalAlignment="Left" Margin="27,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="descTB" HorizontalAlignment="Left" Margin="27,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304"/>
-        <ComboBox x:Name="WaterAmtCB" HorizontalAlignment="Left" Margin="27,195,0,0" VerticalAlignment="Top" Width="116" Height="20"/>
-        <ComboBox x:Name="WaterDaysCB" HorizontalAlignment="Left" Margin="27,244,0,0" VerticalAlignment="Top" Width="116" Height="20"/>
-        <Button x:Name="BackBT" Content="Back" HorizontalAlignment="Left" Margin="46,295,0,0" VerticalAlignment="Top" Width="90" FontSize="16" Height="30" Background="White" Click="BackBT_Click"/>
-        <Button x:Name="AddPlantButton" Content="Add" HorizontalAlignment="Left" Margin="312,295,0,0" VerticalAlignment="Top" Width="90" FontSize="16" Height="30" Click="AddPlantButton_Click"/>
+        <ComboBox x:Name="WaterAmtCB" HorizontalAlignment="Left" Margin="27,195,0,0" VerticalAlignment="Top" Width="116" Height="22" SelectedIndex="0"/>
+        <ComboBox x:Name="WaterDaysCB" HorizontalAlignment="Left" Margin="27,244,0,0" VerticalAlignment="Top" Width="116" Height="22" SelectedIndex="0"/>
+        <Button x:Name="BackBT" Content="Back" HorizontalAlignment="Left" Margin="46,295,0,0" VerticalAlignment="Top" Width="90" FontSize="16" Height="30" Background="#FFEAEAEA" Click="BackBT_Click"/>
+        <Button x:Name="AddPlantButton" Content="Add" HorizontalAlignment="Left" Margin="312,295,0,0" VerticalAlignment="Top" Width="90" FontSize="16" Height="30" Click="AddPlantButton_Click" Background="#FF64DE60"/>
+        <Image HorizontalAlignment="Left" Height="51" Margin="304,10,0,0" VerticalAlignment="Top" Width="64" Source="/plant_icon.jpg"/>
 
     </Grid>
 </Window>

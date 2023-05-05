@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="plant_icon.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="plant_icon.jpg" />
+  </ItemGroup>
+
 </Project>

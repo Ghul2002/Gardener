@@ -52,9 +52,22 @@ namespace Gardener
 
         private void AddPlantButton_Click(object sender, RoutedEventArgs e)
         {
-            var plant = new PlantInfo(nameTB.Text, descTB.Text, WaterAmtCB.Text, WaterDaysCB.Text);
-            var mainWindow = (MainWindow)Owner;
-            mainWindow.AddItemToPlantList(plant);
+            if (descTB.Text == null)
+            {
+                descTB.Text = "-";
+            }
+
+            if (nameTB.Text == null) 
+            {
+                MessageBox.Show("Add name!");       
+            }
+            else
+            {
+                var plant = new PlantInfo(nameTB.Text, descTB.Text, WaterAmtCB.Text, WaterDaysCB.Text);
+                var mainWindow = (MainWindow)Owner;
+                mainWindow.AddItemToPlantList(plant);
+                Close();
+            }
         }
     }
 }
