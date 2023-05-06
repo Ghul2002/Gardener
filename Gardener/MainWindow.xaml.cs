@@ -25,6 +25,8 @@ namespace Gardener
         {
             InitializeComponent();
             PlantList.DisplayMemberPath = "Name";
+            PlantInfo TestPlant = new PlantInfo("TestPlant", "Lubie piwo", 25, 4, DateTime.Now);
+            PlantList.Items.Add(TestPlant);
         }
 
         public void AddItemToPlantList(PlantInfo plant)
@@ -34,9 +36,23 @@ namespace Gardener
 
         private void AddPlantBT_Click(object sender, RoutedEventArgs e)
         {
-            AddPlantWindow addWin = new AddPlantWindow();
+            var addWin = new AddPlantWindow();
             addWin.Owner = this;
             addWin.ShowDialog();
+        }
+
+        private void CheckPlantBT_Click(object sender, RoutedEventArgs e)
+        {
+            if (PlantList.SelectedIndex != -1)
+            {
+                CheckPlantWindow checkWin = new CheckPlantWindow((PlantInfo)PlantList.SelectedItem);
+                checkWin.Owner = this;
+                checkWin.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please select a plant first!");
+            }
         }
     }
 }

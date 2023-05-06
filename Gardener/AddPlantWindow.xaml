@@ -10,8 +10,8 @@
         <TextBlock HorizontalAlignment="Left" Margin="10,19,0,0" TextWrapping="Wrap" Text="Add new plant!" VerticalAlignment="Top" FontSize="36" FontFamily="Arial Black" Height="42" Width="335"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,77,0,0" TextWrapping="Wrap" Text="Name: " VerticalAlignment="Top" FontSize="14"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,124,0,0" TextWrapping="Wrap" Text="Short decription: " VerticalAlignment="Top" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Margin="27,171,0,0" TextWrapping="Wrap" Text="Water amount: " VerticalAlignment="Top" FontSize="14"/>
-        <TextBlock HorizontalAlignment="Left" Margin="27,220,0,0" TextWrapping="Wrap" Text="How often should the plant be watered?" VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,171,0,0" TextWrapping="Wrap" Text="Water amount (ml): " VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="27,220,0,0" TextWrapping="Wrap" Text="How often should the plant be watered? (Days)" VerticalAlignment="Top" FontSize="14"/>
         <TextBox x:Name="nameTB" HorizontalAlignment="Left" Margin="27,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="descTB" HorizontalAlignment="Left" Margin="27,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="304"/>
         <ComboBox x:Name="WaterAmtCB" HorizontalAlignment="Left" Margin="27,195,0,0" VerticalAlignment="Top" Width="116" Height="22" SelectedIndex="0"/>

@@ -27,21 +27,14 @@ namespace Gardener
             for (int i = 0; i <= 50; i++)
             {
                 string amount = (i * 5).ToString();
-                WaterAmtCB.Items.Add($"{amount} ml");
+                WaterAmtCB.Items.Add($"{amount}");
 
             }
 
-            for (int i = 0; i <= 50; i++)
+            for (int i = 0; i <= 31; i++)
             {
                 string days = i.ToString();
-                if( i == 1 )
-                {
-                    WaterDaysCB.Items.Add($"{days} day");
-                }
-                else
-                {
-                    WaterDaysCB.Items.Add($"{days} days");
-                }
+                WaterDaysCB.Items.Add($"{days}");
             }
         }
 
@@ -52,18 +45,16 @@ namespace Gardener
 
         private void AddPlantButton_Click(object sender, RoutedEventArgs e)
         {
-            if (descTB.Text == null)
-            {
-                descTB.Text = "-";
-            }
-
-            if (nameTB.Text == null) 
+            if (nameTB.Text == "") 
             {
                 MessageBox.Show("Add name!");       
             }
             else
             {
-                var plant = new PlantInfo(nameTB.Text, descTB.Text, WaterAmtCB.Text, WaterDaysCB.Text);
+                int waterAmt = Convert.ToInt32(WaterAmtCB.Text);
+                int waterTime = Convert.ToInt32(WaterDaysCB.Text);
+                DateTime addTime = DateTime.Now;
+                var plant = new PlantInfo(nameTB.Text, descTB.Text, waterAmt, waterTime, addTime);
                 var mainWindow = (MainWindow)Owner;
                 mainWindow.AddItemToPlantList(plant);
                 Close();

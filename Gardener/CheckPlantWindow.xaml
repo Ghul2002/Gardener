@@ -1,0 +1,21 @@
+﻿<Window x:Class="Gardener.CheckPlantWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gardener"
+        mc:Ignorable="d"
+        Title="CheckPlantWindow" Height="400" Width="450">
+    <Grid>
+        <Calendar x:Name="WaterCalendar" HorizontalAlignment="Left" Margin="239,192,0,0" VerticalAlignment="Top" SelectionMode="MultipleRange" IsHitTestVisible="False"/>
+        <TextBlock x:Name="PlantNameTB" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="PlantNameTB" VerticalAlignment="Top" Width="430" FontSize="22"/>
+        <TextBlock x:Name="PlantDescTB" HorizontalAlignment="Left" Margin="10,61,0,0" TextWrapping="Wrap" Text="PlantDescTB" VerticalAlignment="Top" Height="69" Width="384" FontSize="14"/>
+        <TextBlock x:Name="WaterAmtTB" HorizontalAlignment="Left" Margin="10,171,0,0" TextWrapping="Wrap" Text="WaterAmtTB" VerticalAlignment="Top" Width="181" FontSize="16"/>
+        <TextBlock x:Name="WaterTimeTB" HorizontalAlignment="Left" Margin="10,239,0,0" TextWrapping="Wrap" Text="WaterTimeTB" VerticalAlignment="Top" Width="181" FontSize="16"/>
+        <Button x:Name="NextMonthBT" Content="Next" HorizontalAlignment="Left" Margin="369,198,0,0" VerticalAlignment="Top" Click="NextMonthBT_Click" Width="49" Background="#FFAAAAAA" FontWeight="Bold" Foreground="White" BorderBrush="#FFE9EEF2"/>
+        <Button x:Name="PrevMonthBT" Content="Previous" HorizontalAlignment="Left" Margin="239,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.104,0.928" Click="PrevMonthBT_Click" Background="#FFAAAAAA" FontWeight="Bold" Foreground="#FFFDFDFE" BorderBrush="#FFE6ECF1"/>
+        <TextBlock x:Name="TodayDateTB" HorizontalAlignment="Left" Margin="10,316,0,0" TextWrapping="Wrap" Text="TodayDateTB" VerticalAlignment="Top" Width="192"/>
+        <TextBlock x:Name="TimeToWaterTB" HorizontalAlignment="Left" Margin="10,337,0,0" TextWrapping="Wrap" Text="TimeToWaterTB" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

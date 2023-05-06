@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Gardener
 {
-    internal class PlantAdding
+    public class PlantAdding
     {
-        public List<PlantInfo> plants = new List<PlantInfo>();
+        public static List<PlantInfo> plants = new List<PlantInfo>();
 
-        public void PlantAdd(PlantInfo plant)
+        public static void PlantAdd(PlantInfo plant)
         {
             plants.Add(plant);
         }

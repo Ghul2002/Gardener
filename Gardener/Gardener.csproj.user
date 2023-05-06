@@ -10,9 +10,15 @@
     <Compile Update="AddPlantWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CheckPlantWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddPlantWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CheckPlantWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
