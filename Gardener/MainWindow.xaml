@@ -5,11 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gardener"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" ResizeMode="CanMinimize">
     <Grid>
-        <Button x:Name="AddPlantBT" Content="Add new plant" HorizontalAlignment="Left" Margin="400,123,0,0" VerticalAlignment="Top" Height="48" Width="120" RenderTransformOrigin="0.535,0.507" Click="AddPlantBT_Click"/>
-        <ListBox x:Name="PlantList" Margin="50,123,438,147" Height="NaN" Width="NaN" DisplayMemberPath="Name"/>
-        <Button x:Name="CheckPlantBT" Content="Check plant" HorizontalAlignment="Left" Margin="400,239,0,0" VerticalAlignment="Top" Height="48" Width="120" Click="CheckPlantBT_Click"/>
-
+        <Grid.Background>
+            <ImageBrush ImageSource="/Image by kjpargetera on Freepik.jpg"/>
+        </Grid.Background>
+        <Button x:Name="AddPlantBT" Content="Add new plant" HorizontalAlignment="Left" Margin="400,123,0,0" VerticalAlignment="Top" Height="48" Width="120" RenderTransformOrigin="0.535,0.507" Click="AddPlantBT_Click" FontWeight="Bold"/>
+        <ListBox x:Name="PlantList" Margin="50,123,438,147" Height="NaN" Width="NaN" DisplayMemberPath="Name" Background="#FFC2D2C6"/>
+        <Button x:Name="CheckPlantBT" Content="Check plant" HorizontalAlignment="Left" Margin="400,239,0,0" VerticalAlignment="Top" Height="48" Width="120" Click="CheckPlantBT_Click" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,99,0,0" TextWrapping="Wrap" Text="Plant list:" VerticalAlignment="Top" Width="87" FontSize="18"/>
+        <Label Content="GARDENER" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="48" FontFamily="Arial Rounded MT Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="298,47,0,0" TextWrapping="Wrap" Text="ver. 1.0." VerticalAlignment="Top"/>
+        <TextBlock x:Name="OldestPlantTB" HorizontalAlignment="Left" Margin="601,123,0,0" TextWrapping="Wrap" Text="OldestPlantTB" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="EditPlantBT" Content="Edit existing plant" HorizontalAlignment="Left" Margin="400,181,0,0" VerticalAlignment="Top" Height="48" Width="120" RenderTransformOrigin="0.535,0.507" Click="EditPlantBT_Click"/>
     </Grid>
+
 </Window>

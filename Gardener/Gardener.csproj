@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Image by kjpargetera on Freepik.jpg" />
     <None Remove="plant_icon.jpg" />
   </ItemGroup>
 
@@ -16,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image by kjpargetera on Freepik.jpg" />
     <Resource Include="plant_icon.jpg" />
   </ItemGroup>
 

@@ -25,22 +25,25 @@ namespace Gardener
         {
             InitializeComponent();
 
-            DisplayInfo(selectedPlant);
-
             AddWaterDates(selectedPlant);
+
+            DisplayInfo(selectedPlant);
         }
 
         private void AddWaterDates(PlantInfo selectedPlant)
         {
-            for(int i = 1; i < 100; i++)
+            for(int i = 1; i < 52; i++)
             {
-                WaterCalendar.SelectedDates.Add(selectedPlant.AddDate.AddDays(selectedPlant.WaterTime * i));
+                if(DateTime.Now <= selectedPlant.AddDate.AddDays(selectedPlant.WaterTime * i))
+                {
+                    WaterCalendar.SelectedDates.Add(selectedPlant.AddDate.AddDays(selectedPlant.WaterTime * i));
+                }
             }
         }
 
         private void DisplayInfo(PlantInfo selectedPlant)
         {
-            PlantNameTB.Text = $"Your plant: {selectedPlant.Name}";
+            PlantNameTB.Text = $" Your plant: {selectedPlant.Name} \n Added: {selectedPlant.AddDate.ToString("dd/MM/yyyy")}";
             PlantDescTB.Text = $"Description: \n{selectedPlant.Description}";
             WaterAmtTB.Text = $"Amount of water: \n{selectedPlant.WaterAmt} ml";
             if (selectedPlant.WaterTime == 1)
@@ -51,10 +54,26 @@ namespace Gardener
             {
                 WaterTimeTB.Text = $"Days between watering: \n{selectedPlant.WaterTime} days";
             }
+
             TodayDateTB.Text = $"Today date is {(DateTime.Now.ToString("dd/MM/yyyy"))}";
-            TimeToWaterTB.Text = $"Days to water: WIP";
+            var nearestWaterDate = GetWaterDates().FirstOrDefault();
+            if ((nearestWaterDate - DateTime.Now).TotalDays < 1)
+            {
+                TimeToWaterTB.Text = $"Days to water: tomorrow";
+            }
+            else
+            TimeToWaterTB.Text = $"Days to water: {Math.Ceiling((nearestWaterDate - DateTime.Now).TotalDays)} days";
         }
 
+        private List<DateTime> GetWaterDates()
+        {
+            List<DateTime> waterDates = new List<DateTime>();
+            foreach (var date in WaterCalendar.SelectedDates)
+            {
+                waterDates.Add(date);
+            }
+            return waterDates;
+        }
         private void NextMonthBT_Click(object sender, RoutedEventArgs e)
         {
             WaterCalendar.DisplayDate = WaterCalendar.DisplayDate.Date.AddMonths(1);

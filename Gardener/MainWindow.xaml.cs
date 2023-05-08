@@ -25,7 +25,8 @@ namespace Gardener
         {
             InitializeComponent();
             PlantList.DisplayMemberPath = "Name";
-            PlantInfo TestPlant = new PlantInfo("TestPlant", "Lubie piwo", 25, 4, DateTime.Now);
+            DateTime date = new DateTime(2023, 05, 02);
+            PlantInfo TestPlant = new PlantInfo("TestPlant", "Lubie piwo", 25, 4, date);
             PlantList.Items.Add(TestPlant);
         }
 
@@ -48,6 +49,18 @@ namespace Gardener
                 CheckPlantWindow checkWin = new CheckPlantWindow((PlantInfo)PlantList.SelectedItem);
                 checkWin.Owner = this;
                 checkWin.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please select a plant first!");
+            }
+        }
+
+        private void EditPlantBT_Click(object sender, RoutedEventArgs e)
+        {
+            if (PlantList.SelectedIndex != -1)
+            {
+                
             }
             else
             {
