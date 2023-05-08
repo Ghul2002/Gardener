@@ -13,12 +13,18 @@
     <Compile Update="CheckPlantWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="EditPlantWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddPlantWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CheckPlantWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditPlantWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">

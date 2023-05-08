@@ -23,7 +23,11 @@ namespace Gardener
         public AddPlantWindow()
         {
             InitializeComponent();
+            FillComboboxes();
+        }
 
+        private void FillComboboxes()
+        {
             for (int i = 0; i <= 50; i++)
             {
                 string amount = (i * 5).ToString();

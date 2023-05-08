@@ -60,11 +60,25 @@ namespace Gardener
         {
             if (PlantList.SelectedIndex != -1)
             {
-                
+                EditPlantWindow editWin = new EditPlantWindow((PlantInfo)PlantList.SelectedItem);
+                editWin.Owner = this;
+                editWin.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Please select a plant first!");
+            }
+        }
+
+        private void DeleteBT_Click(object sender, RoutedEventArgs e)
+        {
+            if (PlantList.SelectedIndex != -1)
+            {
+                MessageBoxResult result = MessageBox.Show("Do you confirm?", "Confiramtion", MessageBoxButton.YesNo);
+                if (result == MessageBoxResult.Yes)
+                {
+                    PlantList.Items.Remove(PlantList.SelectedItem);
+                }
             }
         }
     }

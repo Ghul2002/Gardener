@@ -34,3 +34,5 @@ C:\Users\ghul2\source\repos\Gardener\Gardener\bin\Debug\net6.0-windows\Microsoft
 C:\Users\ghul2\source\repos\Gardener\Gardener\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
 C:\Users\ghul2\source\repos\Gardener\Gardener\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
 C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0-windows\Gardener.csproj.CopyComplete
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0-windows\EditPlantWindow.g.cs
+C:\Users\ghul2\source\repos\Gardener\Gardener\obj\Debug\net6.0-windows\EditPlantWindow.baml

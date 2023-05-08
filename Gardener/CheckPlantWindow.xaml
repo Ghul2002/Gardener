@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Gardener"
         mc:Ignorable="d"
-        Title="CheckPlantWindow" Height="400" Width="450" ResizeMode="CanMinimize">
+        Title="Check" Height="400" Width="450" ResizeMode="CanMinimize" Icon="plant_icon.jpg" >
     <Grid>
         <Calendar x:Name="WaterCalendar" HorizontalAlignment="Left" Margin="239,192,0,0" VerticalAlignment="Top" SelectionMode="MultipleRange" IsHitTestVisible="False"/>
         <TextBlock x:Name="PlantNameTB" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="PlantNameTB" VerticalAlignment="Top" Width="430" FontSize="22"/>
