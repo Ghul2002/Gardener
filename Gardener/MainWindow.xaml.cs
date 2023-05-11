@@ -26,7 +26,7 @@ namespace Gardener
             InitializeComponent();
             PlantList.DisplayMemberPath = "Name";
             DateTime date = new DateTime(2023, 05, 02);
-            PlantInfo TestPlant = new PlantInfo("TestPlant", "Lubie piwo", 25, 4, date);
+            PlantInfo TestPlant = new PlantInfo("TestPlant", "Test desc", 25, 4, date);
             PlantList.Items.Add(TestPlant);
         }
 
